@@ -29,10 +29,10 @@ export default function Xlogin() {
             ) : (
                 <div>{initialLogin?(<form onSubmit={handleFormSubmit}>
                     <h1>Login Page</h1>
-                    <label>Username:
+                    <label>Username
                         <input required type="text" value={username} onChange={(e) => { setUserName(e.target.value) }} />
                     </label><br />
-                    <label>Password:
+                    <label>Password
                         <input required type="password" value={password} onChange={(e) => { setPassword(e.target.value) }} />
                     </label><br />
                     <button type="submit">Submit</button>
@@ -41,10 +41,10 @@ export default function Xlogin() {
                 <form onSubmit={handleFormSubmit}>
                     <h1>Login Page</h1>
                     {errorMessage && <p>{errorMessage}<br /><br /></p>}
-                    <label>Username:
+                    <label>Username
                         <input required type="text" value={username} onChange={(e) => { setUserName(e.target.value) }} />
                     </label><br />
-                    <label>Password:
+                    <label>Password
                         <input required type="password" value={password} onChange={(e) => { setPassword(e.target.value) }} />
                     </label><br />
                     <button type="submit">Submit</button>
